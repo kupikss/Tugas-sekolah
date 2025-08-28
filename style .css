@@ -1,0 +1,40 @@
+/* Mengatur tampilan dasar halaman */
+body {
+    font-family: Arial, sans-serif;           /* Jenis huruf */
+    background-color: #0061b5;              /* Warna latar belakang biru muda yang lembut */
+    color: #004274;                         /* Warna teks utama */
+    margin: 0;                                /* Menghilangkan margin default browser */
+    padding: 20px;                            /* Menambahkan ruang di sekeliling halaman */
+}
+
+/* Mengatur gaya kontainer utama */
+.container {
+    max-width: 600px;                          /* Lebar maksimum kontainer agar konten tidak terlalu melebar */
+    margin: auto;                              /* Menengahkan kontainer secara horizontal */
+    background-color: rgb(255, 255, 255);    /* Warna latar putih untuk isi kontainer agar kontras */
+    padding: 50px;                             /* Ruang dalam kontainer agar isi tidak terlalu menempel */
+    border-radius: 20px;                       /* Membuat sudut kontainer sedikit membulat */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan halus agar terlihat mengambang */
+    text-align: center;                        /* Menengahkan teks di dalam kontainer */
+}
+
+/* Gaya untuk judul utama */
+h1 {
+    color: #4970ca;                          /* Warna biru langit untuk judulnya */
+    margin-bottom: 50px;                       /* Jarak antara judul dan elemen berikutnya */
+}
+
+/* Gaya untuk gambar */
+.osis-foto {                                /* kelasnya */
+    width: 100%;                            /* Gambar mengisi lebar elemen induknya */
+    max-width: 400px;                       /* ukuran fotonya */
+    border-radius: 25px;                    /* Sudut gambar dibulatkan agar lebih estetik */
+    margin-bottom: 20px;                    /* Jarak antara gambar dan teks di bawahnya */
+}
+
+/* Gaya teks deskripsi */
+.deskripsi {
+    font-size: 16px;                        /* Ukuran font deskripsi */
+    line-height: 1.6;                       /* Spasi antarbaris */
+    margin-bottom: 20px;                    /* Jarak bawah dari deskripsi ke elemen selanjutnya */
+}
