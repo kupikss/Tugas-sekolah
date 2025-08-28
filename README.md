@@ -1,2 +1,2 @@
 # Tugas-sekolah
-Tenang tugas sekolah saya 
+Tentang tugas sekolah saya 
