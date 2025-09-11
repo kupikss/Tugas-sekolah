@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hitung Gaji Pekerja Mingguan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2rem;
+            max-width: 400px;
+        }
+        label, input {
+            display: block;
+            margin-bottom: 0.7rem;
+            width: 100%;
+        }
+        input[type="number"] {
+            padding: 0.4rem;
+            font-size: 1rem;
+        }
+        button {
+            padding: 0.7rem;
+            font-size: 1rem;
+            cursor: pointer;
+            width: 100%;
+        }
+        #result {
+            margin-top: 1rem;
+            background: #f0f0f0;
+            padding: 1rem;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Hitung Gaji Pekerja Mingguan</h2>
+
+<form method="post" action="gaji.php">
+    <label for="lembur1">Jam lembur hari 1:</label>
+    <input type="number" id="lembur1" name="lembur1" min="0" value="2" required />
+
+    <label for="lembur2">Jam lembur hari 2:</label>
+    <input type="number" id="lembur2" name="lembur2" min="0" value="3" required />
+
+    <button type="submit">Hitung Gaji</button>
+</form>
+
+</body>
+</html>

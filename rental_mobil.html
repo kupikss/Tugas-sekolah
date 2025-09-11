@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rental Mobil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2rem;
+            max-width: 400px;
+        }
+        label, input {
+            display: block;
+            margin-bottom: 0.5rem;
+            width: 100%;
+        }
+        input[type="number"] {
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+        button {
+            padding: 0.7rem;
+            font-size: 1rem;
+            width: 100%;
+            cursor: pointer;
+        }
+        .checkbox-group {
+            margin-bottom: 1rem;
+        }
+        .checkbox-group label {
+            display: inline-block;
+            margin-right: 1rem;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Rental Mobil</h2>
+    <form method="post" action="process.php">
+        <label for="lamaSewa">Lama Sewa (hari):</label>
+        <input type="number" id="lamaSewa" name="lamaSewa" min="1" required value="1" />
+
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" id="sopir" name="sopir" />
+                Sewa dengan Sopir (Rp 150.000/hari)
+            </label>
+        </div>
+
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" id="asuransi" name="asuransi" />
+                Asuransi (Rp 50.000 sekali bayar)
+            </label>
+        </div>
+
+        <button type="submit">Hitung Total Biaya</button>
+    </form>
+
+</body>
+</html>
